@@ -29,10 +29,10 @@ public class PersonController {
     }
 
     @PostMapping("/addPerson")
-    public PersonDTO addPerson(@RequestParam String name, @RequestParam String code) {
+    public PersonDTO addPerson(@RequestParam String name, @RequestParam String code, @RequestParam String type) {
         if (true) {
             throw new RuntimeException("hi");
         }
-        return personService.savePerson(name, code);
+        return personService.savePerson(name, code, type);
     }
 }

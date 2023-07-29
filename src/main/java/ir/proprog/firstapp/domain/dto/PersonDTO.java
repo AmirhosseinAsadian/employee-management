@@ -11,6 +11,8 @@ public class PersonDTO {
     private String name;
     private String code;
 
+    private String type;
+
     @Override
     public String toString() {
         return name + " " + code;

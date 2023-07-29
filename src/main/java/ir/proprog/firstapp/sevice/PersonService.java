@@ -38,16 +38,17 @@ public class PersonService {
     }
 
     @Transactional
-    public PersonDTO savePerson(String name, String code) {
-        Person person = preparePerson(name, code);
+    public PersonDTO savePerson(String name, String code, String type) {
+        Person person = preparePerson(name, code, type);
         personRepository.save(person);
         return preparePersonDTO(person);
     }
 
-    private Person preparePerson(String name, String code) {
+    private Person preparePerson(String name, String code, String type) {
         Person person = new Person();
         person.setCode(code);
         person.setName(name);
+        person.setType(type);
         return person;
     }
 
@@ -55,5 +56,15 @@ public class PersonService {
         PersonDTO personView = new PersonDTO();
         BeanUtils.copyProperties(person, personView);
         return personView;
+    }
+
+    public List<Person> filterPerson(List<Person> personList, PersonPredicate predicate) {
+        List<Person> filteredPersonList = new ArrayList<>();
+        for (Person person : personList) {
+            if (predicate.filterPerson(person)) {
+                filteredPersonList.add(person);
+            }
+        }
+        return filteredPersonList;
     }
 }
