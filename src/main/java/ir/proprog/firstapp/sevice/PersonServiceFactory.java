@@ -2,7 +2,7 @@ package ir.proprog.firstapp.sevice;
 
 public class PersonServiceFactory {
 
-    public static PersonService getPersonService() {
-        return new PersonService();
+    public static PersonServiceImpl getPersonService() {
+        return new PersonServiceImpl();
     }
 }

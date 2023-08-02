@@ -1,7 +1,7 @@
 package ir.proprog.firstapp.controller;
 
 import ir.proprog.firstapp.domain.dto.PersonDTO;
-import ir.proprog.firstapp.sevice.PersonService;
+import ir.proprog.firstapp.sevice.PersonServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,16 +16,16 @@ import java.util.List;
 public class PersonController {
 
     @Autowired
-    private PersonService personService;
+    private PersonServiceImpl personServiceImpl;
 
     @GetMapping("/getAllPerson")
     public List<PersonDTO> all() {
-        return personService.getAllPerson();
+        return personServiceImpl.getAllPerson();
     }
 
     @GetMapping("/getPerson")
     public PersonDTO getPerson(@RequestParam String code) {
-        return personService.getPersonData(code);
+        return personServiceImpl.getPersonData(code);
     }
 
     @PostMapping("/addPerson")
@@ -33,6 +33,6 @@ public class PersonController {
         if (true) {
             throw new RuntimeException("hi");
         }
-        return personService.savePerson(name, code, type);
+        return personServiceImpl.savePerson(name, code, type);
     }
 }

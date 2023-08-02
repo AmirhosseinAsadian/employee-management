@@ -20,10 +20,13 @@ public class Person {
     private String code;
     private String type;
 
-    public Person(String name, String code, String type) {
+    private String birthDate;
+
+    public Person(String name, String code, String type, String birthDate) {
         this.name = name;
         this.code = code;
         this.type = type;
+        this.birthDate = birthDate;
     }
 
     public String getName() {
@@ -36,5 +39,9 @@ public class Person {
 
     public String getType() {
         return type;
+    }
+
+    public String getBirthDate() {
+        return birthDate;
     }
 }

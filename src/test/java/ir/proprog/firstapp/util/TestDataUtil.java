@@ -9,11 +9,11 @@ import java.util.List;
 public class TestDataUtil {
     public static List<Person> getPersonList() {
         return new ArrayList<>(Arrays.asList(
-                new Person("Ali", "11", "REAL"),
-                new Person("Amir", "12", "REAL"),
-                new Person("Reza", "13", "REAL"),
-                new Person("BenzCo", "21", "LEGAL"),
-                new Person("BMWCo", "22", "LEGAL")
+                new Person("Ali", "11", "REAL", "1401/01/01"),
+                new Person("Amir", "12", "REAL", "1401/01/01"),
+                new Person("Reza", "13", "REAL", "1401/01/01"),
+                new Person("BenzCo", "21", "LEGAL", "1401/01/01"),
+                new Person("BMWCo", "22", "LEGAL", "1401/01/01")
         ));
     }
 }
