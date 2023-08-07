@@ -7,19 +7,21 @@ import ir.proprog.firstapp.sevice.PersonServiceFactory;
 import ir.proprog.firstapp.util.TestDataUtil;
 import org.junit.Test;
 import org.junit.Before;
+
+import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.Optional;
+import java.util.function.*;
 
 public class PersonServiceTest {
     private List<Person> personList;
     private PersonService personService = PersonServiceFactory.getPersonService();
+
     @Before
     public void init() {
         personList = TestDataUtil.getPersonList();
@@ -29,6 +31,7 @@ public class PersonServiceTest {
     public void save_person_successfully() {
         assertThat(new ArrayList<>(), hasSize(1));
     }
+
     @Test
     public void filter_legal_person_successfully() {
         assertThat(personService.filterPerson(personList, person -> Objects.equals("LEGAL", person.getType())), hasSize(2));
@@ -54,4 +57,30 @@ public class PersonServiceTest {
         assertThat(personService.filterPerson(personList, f::apply), hasSize(2));
 
     }
+
+    @Test
+    public void success_open_optional() {
+        String name = "Ali";
+        Optional<String> name3 = Optional.ofNullable(null);
+
+        assertThat(name3.orElseGet(getDefaultValue()), equalTo(""));
+    }
+
+    private Supplier<String> getDefaultValue() {
+        return () -> "";
+    }
+
+    @Test
+    public void success_flat_map_optional() {
+        Optional<Integer> sum = generateOptionalNumber(1)
+                .flatMap(n1 -> generateOptionalNumber(2).map(n2 -> n1 + n2))
+                .flatMap(n12 -> generateOptionalNumber(3).map(n3 -> n3 + n12));
+
+        assertThat(sum.orElse(0), equalTo(6));
+    }
+
+    private Optional<Integer> generateOptionalNumber(int a) {
+        return Optional.of(a);
+    }
+
 }
