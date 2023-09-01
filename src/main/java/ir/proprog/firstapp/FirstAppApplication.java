@@ -8,6 +8,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.env.ConfigurableEnvironment;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 @SpringBootApplication(scanBasePackages = "ir.proprog")
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class FirstAppApplication {
@@ -20,10 +23,13 @@ public class FirstAppApplication {
     }
 
     private static void logAppStartup(ConfigurableApplicationContext app) {
-        logger.info("start first app....");
-        ConfigurableEnvironment environment = app.getEnvironment();
-        String port = environment.getProperty("server.port");
-        String path = environment.getProperty("server.servlet.context-path");
-        logger.info("first app startup in " + path + " " + port);
+        try {
+            logger.info("Start application....");
+            ConfigurableEnvironment environment = app.getEnvironment();
+            Object path = InetAddress.getLocalHost().getHostName() + " (" + InetAddress.getLocalHost().getHostAddress() + ")";
+            logger.info("Application startup in " + path);
+        } catch (UnknownHostException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

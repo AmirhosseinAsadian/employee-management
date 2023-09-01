@@ -1,7 +1,10 @@
 package ir.proprog.firstapp.controller;
 
 import ir.proprog.firstapp.domain.dto.PersonDTO;
+import ir.proprog.firstapp.exception.BusinessException;
 import ir.proprog.firstapp.sevice.PersonServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +18,8 @@ import java.util.List;
 @ResponseBody
 public class PersonController {
 
+    private static final Logger logger = LoggerFactory.getLogger(PersonController.class);
+
     @Autowired
     private PersonServiceImpl personServiceImpl;
 
@@ -24,15 +29,12 @@ public class PersonController {
     }
 
     @GetMapping("/getPerson")
-    public PersonDTO getPerson(@RequestParam String code) {
+    public PersonDTO getPerson(@RequestParam String code) throws BusinessException {
         return personServiceImpl.getPersonData(code);
     }
 
     @PostMapping("/addPerson")
     public PersonDTO addPerson(@RequestParam String name, @RequestParam String code, @RequestParam String type) {
-        if (true) {
-            throw new RuntimeException("hi");
-        }
         return personServiceImpl.savePerson(name, code, type);
     }
 }
