@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a3fa5b9-c0e6-40ed-b890-f279b1b2ab1d" name="Changes" comment="Add Oracle connection.&#10;&#10;refactor controller layer">
+      <change afterPath="$PROJECT_DIR$/../employee-management/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/components/CreatePersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/components/FooterComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/components/HeaderComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/components/ListPersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/components/UpdatePersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/components/ViewPersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/services/PersonService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/frontend/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/CreatePersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/FooterComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/HeaderComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ListPersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/UpdatePersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ViewPersonComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/PersonService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-springboot-api" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/PersonManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/PersonManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/aspect/PersonServiceAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/aspect/PersonServiceAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/config/ConfigUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/config/ConfigUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/domain/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/dto/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/dto/PersonDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/exception/PersonErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/exception/PersonErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/redis/RedisProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/redis/RedisProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/repository/PersonRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/repository/PersonRedisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/sevice/PersonPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/sevice/PersonPredicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/sevice/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/sevice/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/sevice/PersonServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/sevice/PersonServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/sevice/PersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/sevice/PersonServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/proprog/personmanagment/util/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/util/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/change/source-ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/resources/change/source-ddl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/health.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/main/resources/health.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ir/proprog/personmanagment/service/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/test/java/ir/proprog/personmanagment/service/PersonServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ir/proprog/personmanagment/service/PythonInJavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/test/java/ir/proprog/personmanagment/service/PythonInJavaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ir/proprog/personmanagment/util/TestDataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/src/test/java/ir/proprog/personmanagment/util/TestDataUtil.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="amirhosseinasadian &lt;amirhossein.asadian@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2aVInXPizCRQgMGWgFlPJnFbxtm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Projects/employee-management",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/Projects/person-management/frontend/node_modules/react-scripts",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\person-management\backend" />
+      <recent name="D:\Projects\person-management\frontend" />
+      <recent name="D:\Projects\person-management\frontend\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\person-management\backend\backend" />
+      <recent name="D:\Projects\person-management\backend" />
+      <recent name="D:\Projects\person-management\backend\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PersonManagementApplication">
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/frontend/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/frontend/src/App.test.js" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PersonManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="person-management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ir.proprog.personmanagment.PersonManagementApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.proprog.personmanagment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PersonManagementApplication" />
+        <item itemvalue="Jest.renders learn react link" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a3fa5b9-c0e6-40ed-b890-f279b1b2ab1d" name="Changes" comment="" />
+      <created>1704397488297</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704397488297</updated>
+      <workItem from="1704397490027" duration="503000" />
+      <workItem from="1704733084054" duration="459000" />
+      <workItem from="1704961075468" duration="597000" />
+      <workItem from="1704962269454" duration="599000" />
+      <workItem from="1707471055702" duration="58000" />
+      <workItem from="1707471120185" duration="4443000" />
+      <workItem from="1707485305286" duration="10331000" />
+      <workItem from="1707634912005" duration="5103000" />
+      <workItem from="1707670991571" duration="477000" />
+      <workItem from="1707671902447" duration="5131000" />
+      <workItem from="1707677411349" duration="303000" />
+      <workItem from="1711185527775" duration="612000" />
+      <workItem from="1711190596060" duration="3589000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add Oracle connection.&#10;&#10;refactor controller layer">
+      <option name="closed" value="true" />
+      <created>1707492615979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707492615979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add RedisConfig.&#10;&#10;implement redis cache manager." />
+    <MESSAGE value="Add Oracle connection.&#10;&#10;refactor controller layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Oracle connection.&#10;&#10;refactor controller layer" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/controller/PersonController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/backend/src/main/java/ir/proprog/personmanagment/controller/PersonController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
